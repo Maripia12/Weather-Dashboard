@@ -6,6 +6,7 @@ var searchForm = document.querySelector("#search-form");
 
 
 
+
 function handleSearchFormSubmit(event) {
   
 

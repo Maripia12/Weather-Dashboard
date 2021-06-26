@@ -4,39 +4,91 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+   
+    
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style.css"/>
+    
+
   </head>
   <body>
     <header>
       <h1>Weather Dashboard</h1>
+
+      <h2>Search for a City:</h2>
     </header>
 
     <div class="container">
-      <div class="row">
+      <div class="row content">
         <form id="search-form" class="form">
           <div class="a form-group">
-            <div class="input-group">
-                  <input
-                id="search-input"
-                class="form-input w-100"
-                type="text"
-                placeholder="Atlanta"
-              />
+            <class="input-group">
+               <input id="search-input" class="form-input w-100" type="text" placeholder="Enter city here"/>
 
-              <button
-                class="btn search-button"
-                type="submit"
-                id="search-button"
-              >
-                Search
-              </button>
-            </div>
-            
-            </div>
-          </div>
+               <br />
+
+              <button class="btn search-button" type="submit" id="search-button"> Search </button>
+
+
+           </div>
         </form>
-      </div>
+       </div>
     </div>
+    
+    <!-- History List -->
+
+    <div class = "history-list">
+         <div class = "search-list">
+            <ul  class= "list-group" id = "city">
+            
+            </ul>
+        </div>
+    </div>
+
+    <!-- Current Weather -->
+
+    <div class="weather-content">
+        <div class="row">
+            <div class = "city-info border">
+                <h3 id="current-city">
+                    <small id="current-date"></small>
+                </h3>
+                <p class="temp"></p>
+                <p class="humidity"></p>
+                <p class="wind"></p>
+                <p class="uv-index"></p>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Five Day Forecast -->
+
+    <div class = "five-day-forecast">
+        <div class = "row">
+            <h4></h4> 
+            
+         </div>   
+    </div
+            
+         
+
+
+
+
+             
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
+
+
+
+
+    
+
+    
+
+

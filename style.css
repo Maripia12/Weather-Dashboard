@@ -1,3 +1,6 @@
+body { margin: 0px;
+}
+
 * {font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight:900;
     background-color: rgb(233, 248, 248);
@@ -11,13 +14,14 @@ h1 {text-align: center;
     
 }
 
-h2 {margin: 10px;
+h2 {margin: 15px;
     margin-top: -10px;    
 }
 
 button { width: 18% ;
          padding: 7px;
          margin-top: 15px; 
+         margin: 15px;
          color: white;  
          background-color: #19AEF9 ;
          border-radius: 5px 5px 5px;
@@ -29,9 +33,16 @@ button { width: 18% ;
 #search-input {width: 18%;
          padding: 10px;
          border-radius: 5px 5px 5px;
+         margin: 15px;
           
        
          
 }
+ 
+
+               
+
+       
+              
 
  

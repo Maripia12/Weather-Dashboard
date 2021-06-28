@@ -1,94 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-   
-    
+
+
     <title>Weather Dashboard</title>
 
-    <link rel="stylesheet" href="style.css"/>
-    
+    <link rel="stylesheet" href="style.css" />
 
-  </head>
-  <body>
+
+</head>
+
+<body>
     <header>
-      <h1>Weather Dashboard</h1>
-
-      <h2>Search for a City:</h2>
+        <h1>Weather Dashboard</h1>
     </header>
 
-    <div class="container">
-      <div class="row content">
-        <form id="search-form" class="form">
-          <div class="a form-group">
-            <class="input-group">
-               <input id="search-input" class="form-input w-100" type="text" placeholder="Enter city here"/>
 
-               <br />
-
-              <button class="btn search-button" type="submit" id="search-button"> Search </button>
-
-
-           </div>
-        </form>
-       </div>
-    </div>
-    
-    <!-- History List -->
-
-    <div class = "history-list">
-         <div class = "search-list">
-            <ul  class= "list-group" id = "city">
-            
-            </ul>
-        </div>
-    </div>
-
-    <!-- Current Weather -->
-
-    <div class="weather-content">
+    <div class="container-fluid">
         <div class="row">
-            <div class = "city-info border">
-                <h3 id="current-city">
-                    <small id="current-date"></small>
-                </h3>
-                <p class="temp"></p>
-                <p class="humidity"></p>
-                <p class="wind"></p>
-                <p class="uv-index"></p>
 
+            <aside class='col-md-3'>
+                <h2 class="heading">Search for a City:</h2>
+                <form id="search-form" class="form">
+                    <div class="a form-group">
+                        <div class="input-group">
+
+                            <input id="search-input" class="form-input w-100" type="text"
+                                placeholder="Enter city here" />
+
+                            <br />
+
+                            <button class="btn search-button" type="submit" id="search-button"> Search </button>
+
+
+                            </div>
+                </form>
+
+            </aside>
+
+            <div class="col-md-9">
+                <section id='current'>
+                </section>
+                <section id="fiveDay"></section>
             </div>
+
         </div>
-        
     </div>
 
-    <!-- Five Day Forecast -->
-
-    <div class = "five-day-forecast">
-        <div class = "row">
-            <h4></h4> 
-            
-         </div>   
-    </div
-            
-         
 
 
 
 
-             
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
     <script src="script.js"></script>
+
 </body>
+
 </html>
-
-
-
-
-    
-
-    
-
-
